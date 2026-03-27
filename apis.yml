@@ -1,0 +1,45 @@
+aid: retrofit
+name: Retrofit
+description: >-
+  Retrofit is a type-safe HTTP client for Android and Java built by Square,
+  turning HTTP API interfaces into callable Java objects with annotation-based
+  configuration and pluggable serialization.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - SDKs
+  - Java
+  - Android
+  - HTTP Client
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/retrofit/refs/heads/main/apis.yml
+created: '2026-03-27'
+modified: '2026-03-27'
+specificationVersion: '0.19'
+apis:
+  - aid: retrofit:retrofit
+    name: Retrofit
+    description: >-
+      Retrofit is a type-safe HTTP client for Android and Java built by Square,
+      turning HTTP API interfaces into callable Java objects with annotation-based
+      configuration and pluggable serialization.
+    humanURL: https://square.github.io/retrofit/
+    tags:
+      - SDKs
+      - Java
+      - Android
+    properties:
+      - type: Documentation
+        url: https://square.github.io/retrofit/
+      - type: Getting Started
+        url: https://square.github.io/retrofit/#introduction
+common:
+  - type: Website
+    url: https://square.github.io/retrofit/
+  - type: Documentation
+    url: https://square.github.io/retrofit/
+  - type: GitHub Organization
+    url: https://github.com/square
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
