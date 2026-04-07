@@ -7,10 +7,10 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - SDKs
-  - Java
   - Android
   - HTTP Client
+  - Java
+  - SDKs
 url: >-
   https://raw.githubusercontent.com/api-evangelist/retrofit/refs/heads/main/apis.yml
 created: '2026-03-27'
@@ -25,9 +25,9 @@ apis:
       configuration and pluggable serialization.
     humanURL: https://square.github.io/retrofit/
     tags:
-      - SDKs
-      - Java
       - Android
+      - Java
+      - SDKs
     properties:
       - type: Documentation
         url: https://square.github.io/retrofit/
