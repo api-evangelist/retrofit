@@ -1,0 +1,42 @@
+{
+  "title": "Retrofit Library Structure",
+  "description": "JSON structure documenting the modules, converters, adapters, and key components of the Retrofit HTTP client library.",
+  "version": "3.0.0",
+  "modules": {
+    "retrofit": {
+      "description": "Core Retrofit library",
+      "mavenCoordinates": "com.squareup.retrofit2:retrofit:3.0.0",
+      "provides": ["Retrofit.Builder", "Call<T>", "Callback<T>", "Response<T>", "HttpException"]
+    },
+    "retrofit-converters": {
+      "gson": { "artifactId": "converter-gson", "provides": ["GsonConverterFactory"] },
+      "moshi": { "artifactId": "converter-moshi", "provides": ["MoshiConverterFactory"] },
+      "jackson": { "artifactId": "converter-jackson", "provides": ["JacksonConverterFactory"] },
+      "kotlinx-serialization": { "artifactId": "converter-kotlinx-serialization", "provides": ["KotlinSerializationConverterFactory"] },
+      "jaxb": { "artifactId": "converter-jaxb", "provides": ["JaxbConverterFactory"] },
+      "wire": { "artifactId": "converter-wire", "provides": ["WireConverterFactory"] },
+      "scalars": { "artifactId": "converter-scalars", "provides": ["ScalarsConverterFactory"] }
+    },
+    "retrofit-adapters": {
+      "rxjava": { "artifactId": "adapter-rxjava", "provides": ["RxJavaCallAdapterFactory"] },
+      "rxjava2": { "artifactId": "adapter-rxjava2", "provides": ["RxJava2CallAdapterFactory"] },
+      "rxjava3": { "artifactId": "adapter-rxjava3", "provides": ["RxJava3CallAdapterFactory"] },
+      "java8": { "artifactId": "adapter-java8", "provides": ["Java8CallAdapterFactory"] },
+      "guava": { "artifactId": "adapter-guava", "provides": ["GuavaCallAdapterFactory"] },
+      "scala": { "artifactId": "adapter-scala", "provides": ["ScalaCallAdapterFactory"] }
+    },
+    "retrofit-mock": {
+      "description": "Testing mock implementation",
+      "provides": ["MockRetrofit", "BehaviorDelegate<T>"]
+    }
+  },
+  "annotations": {
+    "httpMethods": ["@GET", "@POST", "@PUT", "@DELETE", "@PATCH", "@HEAD", "@OPTIONS", "@HTTP"],
+    "parameters": ["@Path", "@Query", "@QueryMap", "@Header", "@HeaderMap", "@Body", "@Field", "@FieldMap", "@Part", "@PartMap"],
+    "declarative": ["@FormUrlEncoded", "@Multipart", "@Streaming", "@Headers", "@Url", "@Tag"]
+  },
+  "dependencies": {
+    "required": ["okhttp3:okhttp"],
+    "optional": ["okhttp3:logging-interceptor"]
+  }
+}

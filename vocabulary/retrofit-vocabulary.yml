@@ -1,0 +1,172 @@
+name: Retrofit Vocabulary
+description: >-
+  Domain vocabulary for the Retrofit type-safe HTTP client library for Android
+  and JVM, covering annotations, converters, adapters, and HTTP client concepts.
+version: 1.0.0
+created: '2026-05-02'
+modified: '2026-05-02'
+
+terms:
+  - term: Retrofit
+    definition: >-
+      A type-safe HTTP client for Java and Kotlin that translates annotated
+      interface methods into HTTP API calls. Built on top of OkHttp, Retrofit
+      eliminates boilerplate code for making REST API calls by generating
+      concrete implementations at runtime.
+    tags:
+      - Core Concept
+
+  - term: Service Interface
+    definition: >-
+      A Java or Kotlin interface annotated with Retrofit HTTP method annotations
+      that describes the API's endpoints. Retrofit creates an implementation of
+      this interface that executes the corresponding HTTP calls.
+    tags:
+      - Core Concept
+      - API Design
+
+  - term: Call
+    definition: >-
+      The default return type of a Retrofit service interface method representing
+      an HTTP request that can be executed synchronously (execute()) or
+      asynchronously (enqueue()). Only one execute() or enqueue() call may
+      be made per Call instance.
+    tags:
+      - Core Concept
+      - Async
+
+  - term: Converter
+    definition: >-
+      A pluggable component that serializes request bodies and deserializes
+      response bodies. Retrofit supports converters for Gson, Moshi, Jackson,
+      Kotlinx Serialization, Protocol Buffers, JAXB, and plain strings/bytes.
+    tags:
+      - Extensibility
+      - Serialization
+
+  - term: Call Adapter
+    definition: >-
+      A pluggable component that transforms the default Call type into
+      alternative async frameworks. Adapters are available for RxJava
+      (v1/v2/v3), Java 8 CompletableFuture, Guava ListenableFuture,
+      and Scala Future.
+    tags:
+      - Extensibility
+      - Async
+
+  - term: "@GET"
+    definition: >-
+      An annotation indicating that the annotated method should make an HTTP
+      GET request to the relative URL specified in the annotation value.
+    tags:
+      - Annotation
+      - HTTP Methods
+
+  - term: "@POST"
+    definition: >-
+      An annotation indicating that the annotated method should make an HTTP
+      POST request.
+    tags:
+      - Annotation
+      - HTTP Methods
+
+  - term: "@PUT"
+    definition: >-
+      An annotation indicating that the annotated method should make an HTTP
+      PUT request.
+    tags:
+      - Annotation
+      - HTTP Methods
+
+  - term: "@DELETE"
+    definition: >-
+      An annotation indicating that the annotated method should make an HTTP
+      DELETE request.
+    tags:
+      - Annotation
+      - HTTP Methods
+
+  - term: "@PATCH"
+    definition: >-
+      An annotation indicating that the annotated method should make an HTTP
+      PATCH request.
+    tags:
+      - Annotation
+      - HTTP Methods
+
+  - term: "@Path"
+    definition: >-
+      An annotation that substitutes a named path parameter in the URL.
+      The method parameter's value replaces the matching {name} segment
+      in the URL template.
+    tags:
+      - Annotation
+      - Parameters
+
+  - term: "@Query"
+    definition: >-
+      An annotation that appends a query parameter to the URL. Can be applied
+      to method parameters to add key-value pairs to the query string.
+    tags:
+      - Annotation
+      - Parameters
+
+  - term: "@Body"
+    definition: >-
+      An annotation that designates a method parameter as the request body.
+      The annotated object will be serialized using the registered converter
+      and sent as the request body.
+    tags:
+      - Annotation
+      - Request Body
+
+  - term: "@Header"
+    definition: >-
+      An annotation that adds a named header to the request. Can be applied
+      as a method annotation (static header) or parameter annotation (dynamic header).
+    tags:
+      - Annotation
+      - Headers
+
+  - term: "@Multipart"
+    definition: >-
+      An annotation indicating the request should use multipart encoding.
+      Used with @Part annotations to upload files or form data.
+    tags:
+      - Annotation
+      - File Upload
+
+  - term: "@FormUrlEncoded"
+    definition: >-
+      An annotation indicating the request body should be sent as form
+      URL-encoded data. Used with @Field annotations for form submission.
+    tags:
+      - Annotation
+      - Forms
+
+  - term: OkHttp
+    definition: >-
+      The underlying HTTP client library that powers Retrofit. OkHttp handles
+      connection pooling, transparent GZIP, response caching, and retry logic.
+      Retrofit delegates actual HTTP execution to OkHttp.
+    tags:
+      - Dependency
+      - Infrastructure
+
+  - term: Interceptor
+    definition: >-
+      An OkHttp mechanism for observing, modifying, and short-circuiting requests
+      and responses. Used with Retrofit for authentication, logging, caching,
+      and request transformation.
+    tags:
+      - OkHttp
+      - Extensibility
+
+  - term: Suspend Function
+    definition: >-
+      A Kotlin coroutine function that can be suspended and resumed. Retrofit
+      supports suspending service interface methods natively for Kotlin coroutine
+      integration, eliminating the need for a call adapter.
+    tags:
+      - Kotlin
+      - Async

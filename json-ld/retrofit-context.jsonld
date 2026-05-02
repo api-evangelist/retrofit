@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "retrofit": "https://square.github.io/retrofit/ns/",
+    "http": "http://www.w3.org/2011/http#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Library": "schema:SoftwareSourceCode",
+    "HttpClient": "retrofit:HttpClient",
+    "Converter": "retrofit:Converter",
+    "CallAdapter": "retrofit:CallAdapter",
+    "ServiceInterface": "retrofit:ServiceInterface",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "version": "schema:version",
+    "license": {
+      "@id": "schema:license",
+      "@type": "@id"
+    },
+    "programmingLanguage": "schema:programmingLanguage",
+    "codeRepository": {
+      "@id": "schema:codeRepository",
+      "@type": "@id"
+    },
+    "releaseNotes": {
+      "@id": "schema:releaseNotes",
+      "@type": "@id"
+    },
+    "targetPlatform": "schema:targetPlatform",
+    "softwareRequirements": "schema:softwareRequirements",
+    "author": {
+      "@id": "schema:author",
+      "@type": "@id"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/api-evangelist/retrofit/json-schema/retrofit-library-schema.json",
+  "title": "Retrofit Library",
+  "description": "Schema representing the Retrofit type-safe HTTP client library metadata, modules, and configuration.",
+  "type": "object",
+  "required": ["name", "version"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The library name.",
+      "const": "retrofit"
+    },
+    "version": {
+      "type": "string",
+      "description": "The version of Retrofit.",
+      "examples": ["3.0.0", "2.11.0"]
+    },
+    "groupId": {
+      "type": "string",
+      "description": "Maven Group ID.",
+      "const": "com.squareup.retrofit2"
+    },
+    "artifactId": {
+      "type": "string",
+      "description": "Maven Artifact ID.",
+      "const": "retrofit"
+    },
+    "minimumJavaVersion": {
+      "type": "string",
+      "description": "Minimum required Java version.",
+      "examples": ["8", "11"]
+    },
+    "minimumAndroidApi": {
+      "type": "integer",
+      "description": "Minimum Android API level required.",
+      "examples": [21]
+    },
+    "converters": {
+      "type": "array",
+      "description": "Available converter modules for serialization.",
+      "items": {
+        "type": "string",
+        "enum": ["gson", "moshi", "jackson", "kotlinx-serialization", "jaxb", "wire", "simplexml", "scalars"]
+      }
+    },
+    "callAdapters": {
+      "type": "array",
+      "description": "Available call adapter modules for async frameworks.",
+      "items": {
+        "type": "string",
+        "enum": ["rxjava", "rxjava2", "rxjava3", "java8", "guava", "scala"]
+      }
+    },
+    "license": {
+      "type": "string",
+      "description": "License identifier.",
+      "const": "Apache-2.0"
+    },
+    "repository": {
+      "type": "string",
+      "format": "uri",
+      "description": "Source code repository URL.",
+      "const": "https://github.com/square/retrofit"
+    }
+  }
+}
