@@ -43,7 +43,7 @@ apis:
         url: https://square.github.io/retrofit/
       - type: GitHub
         url: https://github.com/square/retrofit
-      - type: Changelog
+      - type: ChangeLog
         url: https://github.com/square/retrofit/blob/trunk/CHANGELOG.md
       - type: JavaDoc
         url: https://square.github.io/retrofit/2.x/retrofit/
@@ -107,7 +107,7 @@ common:
     url: https://github.com/square/retrofit
   - type: GitHubOrganization
     url: https://github.com/square
-  - type: Changelog
+  - type: ChangeLog
     url: https://github.com/square/retrofit/blob/trunk/CHANGELOG.md
   - type: Issues
     url: https://github.com/square/retrofit/issues
