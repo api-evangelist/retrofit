@@ -27,6 +27,16 @@ tags:
   - Kotlin
   - Library
   - Mobile
+  - Open-Source
+  - SDK
+  - Square
+tags_raw:
+  - Android
+  - HTTP Client
+  - Java
+  - Kotlin
+  - Library
+  - Mobile
   - Open Source
   - SDK
   - Square
@@ -45,6 +55,12 @@ apis:
       Java 8 CompletableFuture, and Kotlin coroutines.
     humanURL: https://square.github.io/retrofit/
     tags:
+      - Android
+      - HTTP Client
+      - Java
+      - Kotlin
+      - Open-Source
+    tags_raw:
       - Android
       - HTTP Client
       - Java
