@@ -7,6 +7,17 @@ description: >-
   on top of OkHttp and supports synchronous/asynchronous execution, JSON/XML/Protobuf
   converters, RxJava adapters, and Kotlin coroutines. Current stable version is 3.0.0.
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
