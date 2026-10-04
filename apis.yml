@@ -8,15 +8,20 @@ description: >-
   converters, RxJava adapters, and Kotlin coroutines. Current stable version is 3.0.0.
 type: Index
 deliveryModel:
-  model: unknown
-  open_source: false
+  model: self-hosted
+  license: Apache-2.0
+  license_evidence:
+    repo: square/retrofit
+    spdx: Apache-2.0
+    stars: 43944
+  open_source: true
   commercial: false
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Self-hosted open source · you run it yourself
+  confidence: medium
   source:
-  - none
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -38,7 +43,7 @@ tags:
   - Kotlin
   - Library
   - Mobile
-  - Open-Source
+  - Open Source
   - SDK
   - Square
 tags_raw:
@@ -51,6 +56,7 @@ tags_raw:
   - Open Source
   - SDK
   - Square
+  - Open-Source
 url: >-
   https://raw.githubusercontent.com/api-evangelist/retrofit/refs/heads/main/apis.yml
 created: '2026-03-27'
@@ -70,13 +76,14 @@ apis:
       - HTTP Client
       - Java
       - Kotlin
-      - Open-Source
+      - Open Source
     tags_raw:
       - Android
       - HTTP Client
       - Java
       - Kotlin
       - Open Source
+      - Open-Source
     properties:
       - type: Documentation
         url: https://square.github.io/retrofit/
