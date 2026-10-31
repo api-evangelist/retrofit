@@ -64,90 +64,131 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Retrofit is a type-safe HTTP client for Android and the JVM (Java and Kotlin) built by Square. It turns HTTP API interfaces into callable Java/Kotlin objects using annotation-based configuration and pluggable serialization via converters and call adapters. Retrofit is built on top of OkHttp and supports synchronous and asynchronous execution, JSON/XML/Protobuf converters, RxJava adapters, and Kotlin coroutines. Current stable version is 3.0.0.
+Retrofit is a type-safe HTTP client for Android and the JVM (Java and Kotlin) built by Square, turning HTTP API interfaces into callable Java objects with annotation-based configuration and pluggable serialization. Retrofit is built on top of OkHttp and supports synchronous/asynchronous execution, JSON/XML/Protobuf converters, RxJava adapters, and Kotlin coroutines. Current stable version is 3.0.0.
 
-**URL:** [https://raw.githubusercontent.com/api-evangelist/retrofit/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/retrofit/refs/heads/main/apis.yml)
+**Areas:** Android · HTTP Client · Java · Kotlin · Library · Mobile · Open Source · SDK · Square
 
-## Scope
+## Retrofit on APIs.io
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for Retrofit is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/retrofit/](https://apis.io/providers/retrofit/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (4)
 
-- Android, HTTP Client, Java, Kotlin, Library, Mobile, Open Source, SDK, Square
+- [Retrofit](https://apis.io/apis/retrofit/retrofit-core/) — Retrofit is a type-safe HTTP client for the JVM that turns annotated Java/Kotlin interfaces into HTTP API calls. Supports all HTTP methods via annotations.…
+- [Retrofit Converters](https://apis.io/apis/retrofit/retrofit-converters/) — Pluggable serialization converters for Retrofit supporting Gson, Moshi, Jackson, Kotlinx Serialization, JAXB, Protocol Buffers (Wire), SimpleXML, and Scalars.
+- [Retrofit Call Adapters](https://apis.io/apis/retrofit/retrofit-adapters/) — Pluggable call adapters that allow Retrofit interfaces to return RxJava Observables (v1, v2, v3), Java 8 CompletableFuture, Guava ListenableFuture, and…
+- [Retrofit Mock](https://apis.io/apis/retrofit/retrofit-mock/) — Provides behavior-simulating implementations of Retrofit interfaces for local testing without requiring a network connection.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-27
-- **Modified:** 2026-05-02
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### JSON Schema (1)
 
-### Retrofit Core Library
+The data models the API reads and writes.
 
-Type-safe HTTP client for the JVM. Translates annotated Java/Kotlin interfaces into HTTP API calls built on OkHttp.
+- [Retrofit Library](https://apis.io/schemas/retrofit/retrofit-library/)
 
-**Human URL:** [https://square.github.io/retrofit/](https://square.github.io/retrofit/)
+#### JSON Structure (1)
 
-#### Tags
+Data models expressed in JSON Structure.
 
-- Android, HTTP Client, Java, Kotlin, Open Source
+- [Retrofit Library Structure](https://apis.io/json-structure/retrofit/retrofit-library-structure/)
 
-#### Properties
+#### JSON-LD (1)
 
+Linked-data contexts for the provider's vocabulary.
+
+- [Retrofit Context](https://apis.io/jsonld/retrofit/retrofit-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Retrofit Vocabulary](https://apis.io/vocabularies/retrofit/retrofit-vocabulary/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Retrofit — jsonschema rules](https://apis.io/rules/retrofit/retrofit-jsonschema-spectral-rules/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Retrofit Plans Pricing](https://apis.io/plans/retrofit/retrofit-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Retrofit Rate Limits](https://apis.io/rate-limits/retrofit/retrofit-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Retrofit Finops](https://apis.io/finops/retrofit/retrofit-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://square.github.io/retrofit/)
 - [Documentation](https://square.github.io/retrofit/)
-- [GitHub](https://github.com/square/retrofit)
 - [Changelog](https://github.com/square/retrofit/blob/trunk/CHANGELOG.md)
-- [JavaDoc](https://square.github.io/retrofit/2.x/retrofit/)
+- [GitHub](https://github.com/square)
 
-### Retrofit Converters
+## API Evangelist rating
 
-Pluggable serialization converters supporting Gson, Moshi, Jackson, Kotlinx Serialization, Protocol Buffers, JAXB, and Scalars.
+**Kin Score 16.5** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Human URL:** [https://square.github.io/retrofit/#converters](https://square.github.io/retrofit/#converters)
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 17.9 |
+| Contract governance | 23.5 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 7.9 |
 
-### Retrofit Call Adapters
+**Agent readiness 0.6** — human-only
 
-Pluggable call adapters for RxJava (v1/v2/v3), Java 8 CompletableFuture, Guava ListenableFuture, and Scala Future.
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-**Human URL:** [https://square.github.io/retrofit/#call-adapters](https://square.github.io/retrofit/#call-adapters)
+**Regulatory alignment 4.9** — Education & Research
 
-### Retrofit Mock
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/retrofit/](https://apis.io/providers/retrofit/).
 
-Testing mock implementation for simulating API calls without network connectivity.
+## How this profile is made
 
-**Human URL:** [https://github.com/square/retrofit/tree/trunk/retrofit-mock](https://github.com/square/retrofit/tree/trunk/retrofit-mock)
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Artifacts
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Retrofit: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-### JSON Schemas
+## Open an issue
 
-- [`json-schema/retrofit-library-schema.json`](json-schema/retrofit-library-schema.json) — Schema for Retrofit library metadata, modules, and configuration.
-
-### JSON Structure
-
-- [`json-structure/retrofit-library-structure.json`](json-structure/retrofit-library-structure.json) — Structure documenting modules, converters, adapters, and annotations.
-
-### JSON-LD Context
-
-- [`json-ld/retrofit-context.jsonld`](json-ld/retrofit-context.jsonld) — JSON-LD context mapping Retrofit library vocabulary to schema.org.
-
-### Vocabulary
-
-- [`vocabulary/retrofit-vocabulary.yml`](vocabulary/retrofit-vocabulary.yml) — Domain vocabulary covering 18 key Retrofit annotation and extensibility terms.
-
-## Links
-
-- **Documentation**: [square.github.io/retrofit](https://square.github.io/retrofit/)
-- **GitHub**: [github.com/square/retrofit](https://github.com/square/retrofit)
-- **GitHub Organization**: [github.com/square](https://github.com/square)
-- **Maven Central**: [com.squareup.retrofit2:retrofit](https://search.maven.org/artifact/com.squareup.retrofit2/retrofit)
-- **Changelog**: [CHANGELOG.md](https://github.com/square/retrofit/blob/trunk/CHANGELOG.md)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/retrofit/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
